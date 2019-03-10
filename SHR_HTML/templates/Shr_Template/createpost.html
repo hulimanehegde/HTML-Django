@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Create a Post </h1>
+<form action="{% url SHR_HTML.Form_Validation.views.createpost %}" method="POST">
+{% csrf_token %}
+Title: <input type="text" name="title"/><br/>
+Content: <br/>
+<textarea cols="35" rows="8" name="content">
+</textarea><br/>
+<input type="submit" value="post" href="% url SHR_HTML.Form_Validation.views.createpost %}"/>
+</form>
+</body>
+</html>
